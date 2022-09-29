@@ -1,0 +1,11 @@
+p {
+  font-family:  sans-serif;
+}
+.wd-content-border {
+  outline: 1px solid rgb(47, 51, 54);
+  padding: 4px;
+}
+
+.wd-body {
+  background-color: black;
+}

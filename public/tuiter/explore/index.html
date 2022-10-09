@@ -3,126 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="public/tuiter/styles.css"
-          rel="stylesheet"/>
     <link href="index.css"
+          rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           rel="stylesheet"/>
 </head>
 
-<body class="wd-body">
-<div class="wd-content-border">
-    <div class="wd-float-left-search">
-        <input class="wd-tuiter-search" type="text" id="wd-search-bar"
-               placeholder="Search Tuiter"/>
+<body>
+
+<div class="container mt-1">
+
+    <div class="row">
+        <div class="d-none d-xl-block col-2 me-1">
+            <div class="row p-1 border">
+                <a href="#"> <i class="fab fa-twitter"></i>  </a>
+            </div>
+            <div class="row p-1 border bg-primary text-white">
+                <a href="#" class="no_decoration"> <span class="text-white"> <i class="fas fa-hashtag"></i> Explore </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#" class="no_decoration"> <span class="text-black link_style"> <i class="fas fa-bell"></i> Notifications </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#" class="no_decoration"> <span class="text-black"> <i class="fas fa-envelope"></i> Messages </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#" class="no_decoration"> <span class="text-black"> <i class="fas fa-bookmark"></i> Bookmarks </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#" class="no_decoration"> <span class="text-black"> <i class="fas fa-list"></i> Lists </span> </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#" class="no_decoration"> <span class="text-black"> <i class="fas fa-user"></i> Profile </span> </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#" class="no_decoration"> <span class="text-black underscore-0"> <i class="fas fa-minus-circle"></i> More </span> </a>
+            </div>
+            <div class="row p-1">
+                <button class="border bg-primary text-white rounded-pill fs-smaller">Tweet</button>
+            </div>
+        </div>
+        <div class="d-xl-none col-1 me-1">
+            <div class="row p-1 border">
+                <a href="#"> <i class="fab fa-twitter"></i>  </a>
+            </div>
+            <div class="row p-1 border bg-primary text-white">
+                <a href="#" > <span class="text-white"> <i class="fas fa-hashtag"></i> </span> </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#"> <span class="text-black"> <i class="fas fa-bell"></i>  </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#"> <span class="text-black"> <i class="fas fa-envelope"></i>  </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#"> <span class="text-black"> <i class="fas fa-bookmark"></i>  </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#"> <span class="text-black"> <i class="fas fa-list"></i>  </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#"> <span class="text-black"> <i class="fas fa-user"></i>  </span>  </a>
+            </div>
+            <div class="row p-1 border">
+                <a href="#"> <span class="text-black"> <i class="fas fa-minus-circle"></i> </span> </a>
+            </div>
+            <div class="row p-1">
+                <button class="border bg-primary text-white rounded-pill ">Tweet</button>
+            </div>
+        </div>
+        <div class="col mt-1 nav_col">
+            <div class="container">
+                <div class="row mb-1">
+                    <div class="col-11">
+                        <div id="input_container">
+                            <input type="text" class="form-control form-control-sm border border-1 rounded-pill" id="input" placeholder="Search Tuiter">
+                            <i class="fas fa-search fa-sm" id="input_img"></i>
+                        </div>
+                    </div>
+                    <div class="col-1 text-primary">
+                        <i class="fas fa-cog fa-2x"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="nav nav-tabs nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link d-none d-md-block" href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="position-relative border">
+                        <img src="spacex_spaceship.png" class="img-fluid " >
+                        <span class="position-absolute bottom-0 start-0 ms-4 text-white h3">SpaceX's Starship</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="row p-1 border">
+                            <div class="col-9">
+                                <span>Web Development</span>
+                                <br/>
+                                <span class="text-black fw-bold">ReactJS <i class='fas fa-check-circle'></i></span> - 2h
+                                <br/>
+                                <span class="text-black fw-bold">React.js is a component based front end library that makes it very easy to build Singl Page Applications or SPAs</span>
+                                <br/>
+                            </div>
+                            <div class="col-1">
+                                <img src="react.png" class="tuit_img"/>
+                            </div>
+                        </div>
+                        <div class="row p-1 border">
+                            <div class="col-9">
+                                <span class="text-black fw-bold">JavaScript <i class='fas fa-check-circle'></i></span> - 2h
+                                <br/>
+                                <span class="text-black fw-bold">JavaScript is a programming language that can run on browsers as well as desktops</span>
+                                <br/>
+                                <span>123K Tweets</span>
+                                <br/>
+                            </div>
+                            <div class="col-1">
+                                <img src="js.png" class="tuit_img"/>
+                            </div>
+                        </div>
+                        <div class="row p-1 border">
+                            <div class="col-9">
+                                <span>Web Development</span>
+                                <br/>
+                                <span class="text-black fw-bold">JQuery</span>
+                                <br/>
+                                <span>123K Tweets</span>
+                                <br/>
+                            </div>
+                            <div class="col-1">
+                                <img src="jquery.png" class="tuit_img"/>
+                            </div>
+                        </div>
+                        <div class="row p-1 border">
+                            <div class="col-9">
+                                <span>Web Development</span>
+                                <br/>
+                                <span class="text-black fw-bold">NodeJS <i class='fas fa-check-circle'></i>  </span> - 2h
+                                <br/>
+                                <span>123K Tweets</span>
+                                <br/>
+                            </div>
+                            <div class="col-1">
+                                <img src="nodejs.png" class="tuit_img"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block col-xl-3 col-lg-4 pe-1">
+            <div class="container p-0">
+                <div class="row p-1 border">
+                    <span class="fw-bold"> Who to follow </span>
+                </div>
+                <div class="row p-1 border">
+                    <div class="col-3">
+                        <img class="img-fluid 2x rounded-pill" src="java.png"/>
+                    </div>
+                    <div class="col-6">
+                        <span class="fw-bold"> Java </span>
+                        <br/>
+                        <span> @Java </span>
+                    </div>
+                    <div class="col-2">
+                        <button class="border bg-primary text-white rounded-pill mt-3"> Follow </button>
+                    </div>
+                </div>
+                <div class="row p-1 border">
+                    <div class="col-3">
+                        <img class="img-fluid 2x rounded-pill" src="rel_space.png"/>
+                    </div>
+                    <div class="col-6">
+                        <span class="fw-bold"> Relativity Space </span>
+                        <br/>
+                        <span> @relativityspace </span>
+                    </div>
+                    <div class="col-2">
+                        <button class="border bg-primary text-white rounded-pill mt-3"> Follow </button>
+                    </div>
+                </div>
+                <div class="row p-1 border">
+                    <div class="col-3">
+                        <img class="img-fluid 2x rounded-pill" src="virgingalactic.png"/>
+                    </div>
+                    <div class="col-6">
+                        <span class="fw-bold"> Virgin Galactic </span>
+                        <br/>
+                        <span> @virgingalactic </span>
+                    </div>
+                    <div class="col-2">
+                        <button class="border bg-primary text-white rounded-pill mt-3"> Follow </button>
+                    </div>
+                </div>
+                <div class="row p-1 border">
+                    <div class="col-3">
+                        <img class="img-fluid 2x rounded-pill" src="nasa.png"/>
+                    </div>
+                    <div class="col-6">
+                        <span class="fw-bold"> NASA </span>
+                        <br/>
+                        <span> @NASA </span>
+                    </div>
+                    <div class="col-1">
+                        <button class="border bg-primary text-white rounded-pill mt-3"> Follow </button>
+                    </div>
+                </div>
+                <div class="row p-1 border pb-2">
+                    <div class="col-3">
+                        <img class="img-fluid 2x rounded-pill" src="tesla.png"/>
+                    </div>
+                    <div class="col-6">
+                        <span class="fw-bold"> Tesla </span>
+                        <br/>
+                        <span> @Tesla </span>
+                    </div>
+                    <div class="col-1">
+                        <button class="border bg-primary text-white rounded-pill mt-3"> Follow </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="wd-float-right-search">
-        <a href="explore-settings.html"> <img height="16px" width="16px" src="gear.svg"> </a>
-    </div>
-    <div class="wd-float-done"></div>
-
-
-<br/> <br/>
-
-    <a class="wd-explore-bar-highlighted" href="explore/for_you.html">For you</a>
-    <a class="wd-explore-bar" href="explore/trending.html">Trending</a>
-    <a class="wd-explore-bar" href="explore/covid-19.html">COVID-19</a>
-    <a class="wd-explore-bar" href="explore/news.html">News</a>
-    <a class="wd-explore-bar" href="explore/sports.html">Sports</a>
-    <a class="wd-explore-bar" href="explore/entertainment.html">Entertainment</a>
-
-    <br/><br/>
 </div>
-<hr class="wd-thick-hr"/>
 
 
-<div class="wd-topic wd-content-border">
-    <p>
-        <span class="wd-grey-secondary"> Trending in Science </span>
-        <br/>
-        <span class="wd-white-primary"> Starship </span>
-        <br/>
-        <span class="wd-grey-secondary"> 55.5k Tuits </span>
-    </p>
-    <br/>
-    <p>
-        <span class="wd-grey-secondary"> Sports - Trending </span>
-        <br/>
-        <span class="wd-white-primary"> Joe Rogan </span>
-        <br/>
-        <span class="wd-grey-secondary"> 5218 Tuits </span>
-    </p>
-</div>
-<div class="wd-content-border">
-    <div class="wd-float-left-topic">
-        <p>
-            <span class="wd-white-primary"> <img class="wd-author-img" src="timeslogo.jpg"
-                                                 height="16px"
-                                                 width="16px"> The New York Times </span>
-            <img src="verified.svg" height="16px" width="16px">
-            <span class="wd-grey-secondary"> - Yesterday </span>
-            <br/>
-            <span class="wd-white-primary"> CNN's Cuomo Conundrum: A star anchor with a brother in trouble </span>
-        </p>
-    </div>
-    <div class="wd-float-right-img">
-        <img class="wd-topic-img" src="cuomo-conundrum.jpg">
-    </div>
-    <div class="wd-float-done"></div>
+<div class="d-sm-block d-md-none fa-2x"></div>
+<div class="d-none d-md-block">M</div>
+<div class="d-none d-lg-block">L</div>
+<div class="d-none d-xl-block">XL</div>
 
-</div>
-<div class="wd-content-border">
-    <div class="wd-float-left-topic">
-        <p>
-            <span class="wd-grey-secondary"> COVID-19 - LIVE </span>
-            <br/>
-            <span class="wd-white-primary"> COVID-19: News and updates for Massachusetts </span>
-        </p>
-    </div>
-    <div class="wd-float-right-img">
-        <img class="wd-topic-img" src="mass_covid.png">
-    </div>
-    <div class="wd-float-done"></div>
 
-</div>
 
-<div class="wd-content-border">
-    <div class="wd-float-left-topic">
-        <p>
-            <span class="wd-grey-secondary"> RUSSIA-UKRAINE CONFLICT - LIVE </span>
-            <br/>
-            <span class="wd-white-primary"> News and updates on the 2022 Russian invasion of Ukraine </span>
-        </p>
-    </div>
-    <div class="wd-float-right-img">
-        <img class="wd-topic-img" src="russia-ukraine.png">
-    </div>
-    <div class="wd-float-done"></div>
-
-</div>
-<div class="wd-content-border">
-    <div class="wd-float-left-topic">
-        <p>
-        <span class="wd-white-primary"> <img class="wd-author-img" src="bloomberglogo.jpg"
-                                             height="16px" width="16px"> Bloomberg Opinion </span>
-            <img src="verified.svg" height="16px" width="16px">
-            <span class="wd-grey-secondary"> - Yesterday </span>
-            <br/>
-            <span class="wd-white-primary"> Thinking about getting a booster? Read this first. </span>
-        </p>
-    </div>
-    <div class="wd-float-right-img">
-        <img class="wd-topic-img" src="covid-booster.jpg">
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-topic wd-content-border">
-    <p>
-        <span class="wd-grey-secondary"> Trending in United States </span>
-        <br/>
-        <span class="wd-white-primary"> Wonder Bread </span>
-        <br/>
-        <span class="wd-grey-secondary"> 1259 Tuits </span>
-    </p>
-</div>
 </body>
 </html>

@@ -1,0 +1,37 @@
+#input_container { position:relative; padding:0; margin:0; }
+
+#input { height:20px; margin:0; padding-left: 30px;}
+
+#input_img { position:absolute; bottom:12px; left:8px; width:10px; height:10px; }
+
+$input-border-radius: 100px;
+
+.border {
+  border-width: 2px;
+}
+
+.rounded {
+  border-radius: 100px;
+}
+
+.blue-color {
+    color: blue;
+}
+
+.tuit_img {
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.fs_smaller {
+  font-size: 10px;
+}
+
+.nav_col {
+    min-width: 40px;
+}
+
+.no_decoration {
+  text-decoration: none;
+}

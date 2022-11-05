@@ -8,7 +8,7 @@ const NavigationSidebar = (
  return (
    <div className="list-group">
      <a className="list-group-item">Tuiter</a>
-     <a href="/tuiter/" className={`list-group-item
+     <a href="/tuiter" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
        <i class="fas fa-home"></i> Home
      </a>

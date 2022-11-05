@@ -16,8 +16,11 @@ function App() {
                  element={<HelloWorld/>}/>
           <Route path="/tuiter"
                  element={<Tuiter/>}/>
+
           <Route path="/tuiter/explore"
                  element={<Explore/>}/>
+          <Route path="/tuiter/*"
+                           element={<Tuiter/>}/>
         </Routes>
       </div>
     </BrowserRouter>

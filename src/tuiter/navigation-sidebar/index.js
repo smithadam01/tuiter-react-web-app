@@ -8,37 +8,42 @@ const NavigationSidebar = (
  return (
    <div className="list-group">
      <a className="list-group-item">Tuiter</a>
-     <a className={`list-group-item
+     <a href="/tuiter/" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
-       Home
+       <i class="fas fa-home"></i> Home
      </a>
-     <a className={`list-group-item
+     <a href="/tuiter/explore" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
-       Explore
+       <i class="fa fa-hashtag" aria-hidden="true"></i> Explore
+     </a>
+     <a href="/" className={`list-group-item
+                    ${active === 'notifications'?'active':''}`}>
+        <i class="fa-regular fa-asterisk"></i> Labs
      </a>
      <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-       Notifications
+       <i class="fa-regular fa-bell"></i> Notifications
      </a>
+
      <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-       Messages
+      <i class="fa-regular fa-envelope"></i> Messages
      </a>
      <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-       Bookmarks
+       <i class="fa-regular fa-bookmark"></i> Bookmarks
      </a>
      <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-       Lists
+       <i class="fa-solid fa-table-list"></i> Lists
      </a>
      <a className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-       Profile
+       <i class="fa-regular fa-user"></i> Profile
      </a>
      <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-       More
+       <i class="fas fa-ellipsis"></i> More
      </a>
    </div>
  );

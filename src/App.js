@@ -16,7 +16,7 @@ function App() {
                  element={<HelloWorld/>}/>
           <Route path="/tuiter"
                  element={<Tuiter/>}/>
-          <Route path="/tuiter/*"
+          <Route path="/tuiter/explore"
                  element={<Explore/>}/>
         </Routes>
       </div>

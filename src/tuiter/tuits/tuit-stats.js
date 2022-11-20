@@ -1,3 +1,6 @@
+import {updateTuitThunk} from "../../services/tuits-thunks";
+import {useDispatch} from "react-redux";
+
 
 const TuitStats = (
                  {
@@ -17,10 +20,13 @@ const TuitStats = (
                    }
                  }
                 ) => {
-                let heart = <i className="far fa-heart"></i>;
+                let heart = <i onClick={() => dispatch(updateTuitThunk({ ...tuit, liked: true, likes: tuit.likes + 1}))}
+                className="far fa-heart"></i>;
                 if (tuit.liked) {
-                    heart = <i className="fas fa-heart text-danger"></i>;
+                    heart = <i onClick={() => dispatch(updateTuitThunk({ ...tuit, liked: false, likes: tuit.likes - 1}))}
+                    className="fas fa-heart text-danger"></i>;
                 }
+                const dispatch = useDispatch();
                 return (
     <div className="container pt-2">
     <div className="row">
@@ -33,7 +39,8 @@ const TuitStats = (
             <i class="fa fa-retweet" aria-hidden="true"></i> {tuit.retuits}
         </div>
         <div className="col">
-            {heart} {tuit.likes}
+            {heart}
+            {tuit.likes}
         </div>
         <div className="col">
             <i className="fa-solid fa-share-alt"></i>
